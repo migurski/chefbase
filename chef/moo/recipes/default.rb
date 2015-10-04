@@ -1,19 +1,9 @@
-package 'cowsay'
+bash 'touch /tmp/moo' do
+  code <<-BASH
 
-ruby_block 'cow say' do
-  block do
-    print <<-COW
+# Touch the file /tmp/moo
+touch /tmp/moo
 
-	 ______
-	( Chef )
-	 ------
-		o   ^__^
-		 o  (oo)\\_______
-		    (__)\\       )\\
-			||----w |
-			||     ||
-
-COW
-  end
+BASH
 end
 
